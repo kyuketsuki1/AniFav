@@ -1,16 +1,18 @@
-
 body {
-    background-image: url("https://github.com/kyuketsuki1/AniFav/blob/main/img/bg4.jpg?raw=true");
+    background-image: url("https://github.com/kyuketsuki1/AniFav/blob/main/img/bg3.jpg?raw=true");
     background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #2B2D42;
     color: #fff;
-    padding: 5px 100px;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +32,7 @@ body {
 
 .links {
     display: flex;  
-    margin-right: 41.9%;
+    margin-right: 42.8%;
     justify-content: right;
     flex-grow: 1;
     font-family: 'Overpass', sans-serif;
@@ -52,7 +54,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: #0A1625;
-    padding: 122px;
+    padding: 90px;
     border: none;
     border-radius: 30px;
     box-shadow: 0 0 px 10px rgba(0, 0, 0, 0.1);
@@ -71,35 +73,22 @@ body {
         color: #ACD5F2;
         font-weight: bolder;
     }
-}
+    
+    a {
+        text-decoration: none;
+        color: red;
+        font-family: 'Overpass', sans-serif;
+        font-weight: bolder;
+    }
 
-.button-group {
-    margin-top: 20px;
-    font-family: 'Overpass', sans-serif;
-}
+    .nero {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+        height: 150px;
+    }
 
-button {
-    background-color: #3577FF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 0 1px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    font-family: 'Overpass', sans-serif;
-    font-weight: bolder;
-}
-
-button:hover {
-    background-color: #062157;
-    font-family: 'Overpass', sans-serif;
-}
-
-button a {
-    color: white;
-    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -117,7 +106,6 @@ button a {
     .links a {
         font-size: 18px;
     }
-
     .center-block {
         padding: 60px;
     }
@@ -130,16 +118,19 @@ button a {
         font-size: 18px;
     }
 
-    button {
-        font-size: 18px;
-        padding: 8px 15px;
-        margin: 10px;
+    .center-block .nero {
+        width: 180px;
+        height: 120px;
     }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
     .links a {
-        font-size: 16px;
+        font-size: 16px; 
     }
 
     .center-block {
@@ -152,5 +143,10 @@ button a {
 
     .center-block p {
         font-size: 16px;
+    }
+
+    .center-block .nero {
+        width: 150px;
+        height: 100px;
     }
 }
